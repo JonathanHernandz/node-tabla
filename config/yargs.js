@@ -16,7 +16,8 @@ const argv = require('yargs')
         'h':{
             alias: 'hasta',
             type: 'number',
-            default: 10
+            default: 10,
+            describe: "Es el numero que define el limite de la tabla, del 1 al hasta"
         }
     })
     .check((argv,options)=>{
